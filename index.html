@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <h1 class="weather-app-header">Weather App</h1>
+      </div>
+      <form class="get-user-input">
+        <input type="text" id="city-input" placeholder="Enter City Name ...">
+        <i class="fa-solid fa-location-dot location-icon"></i>
+        <input type="submit" value="Get Weather" id="submit-city-btn">
+      </form>
+      <!-- <div class="get-user-input">
+      <input type="text" id="city-input" placeholder="Enter City Name ..." />
+      <i class="fa-solid fa-location-dot location-icon"></i>
+        <button id="submit-city-btn">Get Weather</button>
+      </div> -->
+      <div class="city-weather-info" id="city-weather-info">
+        <div class="weather-icon-container">
+          <!-- <img src="https://openweathermap.org/img/wn/04d.png" class="weather-icon" id="weather-icon" /> -->
+        </div>
+        <div class="weather-condition-container">
+          <span id="temperature"></span>
+          <span id="weather-condition"></span>
+        </div>
+        <div class="weather-details">
+          <!-- <div id="feels-like" class="description-box">Feels like:<br> 4°c</div>
+          <div id="humidity" class="description-box">Humidity:<br> 74%</div>
+          <div id="wind-speed" class="description-box">Wind speed:<br> 20.6 m/s</div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
